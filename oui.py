@@ -1,9 +1,13 @@
-def calculer_duree(date_debut, date_fin):
+def calculer_duree(liste):
     """
-    Calcule la durée en heures entre deux dates.
+    Calcule la durée en heures entre deux dates dans une liste.
     """
     format_date = "%Y-%m-%d %H:%M:%S%z"
     
+    # Extraire les dates de début et de fin de la liste
+    date_debut = liste[1]
+    date_fin = liste[0]
+
     # Extraire les heures et les minutes des dates de début et de fin
     heures_debut, minutes_debut = map(int, date_debut.split()[1].split(':')[:2])
     heures_fin, minutes_fin = map(int, date_fin.split()[1].split(':')[:2])
@@ -18,12 +22,11 @@ def calculer_duree(date_debut, date_fin):
     return duree_en_heures
 
 def main():
-    # Les dates à partir de la liste fournie
-    date_debut = '2021-09-22 12:00:00+00:00'
-    date_fin = '2021-09-22 14:00:00+00:00'
+    # Liste fournie avec les dates
+    ma_liste = ['Réseaux opérateurs', '2021-09-22 12:00:00+00:00', '2021-09-22 14:00:00+00:00', 'RT2App\nRT2Hamming\nRT2Dijkstra\nDEJUSSIEU JEAN LOUIS\n(Exported :05/01/2022 11:04)', 'RT-Amphi,RT-Salle-TD4']
 
     # Calculer la durée
-    duree_en_heures = calculer_duree(date_debut, date_fin)
+    duree_en_heures = calculer_duree(ma_liste)
 
     # Afficher le résultat
     print(f"La durée est de {duree_en_heures} heures.")
