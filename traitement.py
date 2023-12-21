@@ -1,5 +1,7 @@
 import csv
 import re
+import matplotlib.pyplot as plt
+
 table = []
 with open('ADECal.csv', newline='') as csvfile:
     reader = csv.reader(csvfile, delimiter=',')
@@ -39,7 +41,28 @@ for element in table:
             heures_TP = int(heures_TP + calcule_duree_prof(element))
         elif re.search("TD",element[4]):
             heures_TD = int(heures_TD + calcule_duree_prof(element))
+
 print(module_heures)
 print("Heures CM :",heures_CM)
 print("Heures TD :",heures_TD)
 print("Heures TP :",heures_TP)
+
+modules = list(module_heures.keys())
+heures = list(module_heures.values())
+
+#Histogramme 
+plt.bar(modules, heures)
+plt.title("Bilan des heures par module")
+plt.xlabel("Modules")
+plt.ylabel("Nombre d\'heure")
+plt.xticks(rotation=30, ha='right')
+plt.grid()
+
+#Creation du bilan dans un fichier csv 
+with open('bilan_heures_par_module.csv', 'w', newline='') as csvfile:
+    writer = csv.writer(csvfile)
+    writer.writerow(['Module', 'Heures'])
+    for module, heure in zip(modules, heures):
+        writer.writerow([module, heure])
+        
+plt.show()
