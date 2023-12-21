@@ -1,15 +1,17 @@
 import csv
-table=[]
-with open('ADECal.csv',newline='') as csvfile:
-    reader=csv.reader(csvfile,delimiter=',')
+
+table = []
+
+with open('ADECal.csv', newline='') as csvfile:
+    reader = csv.reader(csvfile, delimiter=',')
     for row in reader:
         table.append(row)
 
-#suppression des \n
+# Suppression des \n
 for chaine in table:
-    chaine[3] = chaine[3].replace('\n',',')
+    chaine[3] = chaine[3].replace('\n', ',')
 
-#liste des modules par enseignant
+# Liste des modules par enseignant
 modules = list()
 prof = input("Entrez le nom d'un.e enseignant.e : ")
 prof = prof.upper()
@@ -18,8 +20,7 @@ for element in table:
         modules.append(element[0])
 print(modules)
 
-#nombre heures total par prof
-heures = 0
+# Nombre d'heures total par prof
 prof = input("Entrez le nom d'un.e enseignant.e : ")
 prof = prof.upper()
 
@@ -39,16 +40,13 @@ def main():
     ma_liste = table
 
     # Calculer la durée
-    duree_en_heures = calculer_duree(ma_liste)
+    duree_en_heures = 0
+    for element in ma_liste:
+        if prof in element[3]:
+            duree_en_heures += calculer_duree(element)
 
     # Afficher le résultat
-    print(f"La durée est de {duree_en_heures} heures.")
+    print(f"Nombre d'heures de {prof} : {duree_en_heures} heures.")
     return duree_en_heures
 
 main()
-
-
-'''for element in table:
-    if prof in element[3]:
-        heures = calculer_duree(element)
-print("Nombre d'heures de ",prof," : ",heures)'''
