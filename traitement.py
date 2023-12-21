@@ -1,7 +1,6 @@
 import csv
-
+import re
 table = []
-
 with open('ADECal.csv', newline='') as csvfile:
     reader = csv.reader(csvfile, delimiter=',')
     for row in reader:
@@ -11,16 +10,9 @@ with open('ADECal.csv', newline='') as csvfile:
 for chaine in table:
     chaine[3] = chaine[3].replace('\n', ',')
 
-# Liste des modules par enseignant
-modules = list()
-prof = input("Entrez le nom d'un enseignant : ")
+prof = input("Entrez le nom d'un.e enseignant.e : ")
 prof = prof.upper()
-for element in table:
-    if prof in element[3]:
-        modules.append(element[0])
-print(modules)
 
-# Nombre d'heures total par prof
 def calcule_duree_prof(liste):
     format_date = "%Y-%m-%d %H:%M:%S%z"
     date_debut = liste[1]
@@ -32,19 +24,22 @@ def calcule_duree_prof(liste):
     duree_en_heures = difference_heures + difference_minutes / 60
     return duree_en_heures
 
-def main():
-    # Liste fournie avec les dates
-    ma_liste = table
+ma_liste = table
+module_heures = {}
+heures_CM = 0
+heures_TD = 0
+heures_TP = 0
 
-    # Calculer la durée
-    duree_en_heures = 0
-    for element in ma_liste:
-        if prof in element[3]:
-            duree_en_heures += calcule_duree_prof(element)
-
-    # Afficher le résultat
-    print(f"Nombre d'heures de {prof} : {duree_en_heures} heures.")
-    return duree_en_heures
-
-main()
-
+for element in table:
+    if prof in element[3]:
+        module_heures[element[0]]= module_heures.get(element[0],0) + calcule_duree_prof(element)
+        if re.search("Amphi",element[4]) or re.search("DS",element[0]):
+            heures_CM = int(heures_CM + calcule_duree_prof(element))
+        elif re.search("Labo",element[4]):
+            heures_TP = int(heures_TP + calcule_duree_prof(element))
+        elif re.search("TD",element[4]):
+            heures_TD = int(heures_TD + calcule_duree_prof(element))
+print(module_heures)
+print("Heures CM :",heures_CM)
+print("Heures TD :",heures_TD)
+print("Heures TP :",heures_TP)
