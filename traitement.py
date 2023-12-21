@@ -13,7 +13,7 @@ for chaine in table:
 
 # Liste des modules par enseignant
 modules = list()
-prof = input("Entrez le nom d'un.e enseignant.e : ")
+prof = input("Entrez le nom d'un enseignant : ")
 prof = prof.upper()
 for element in table:
     if prof in element[3]:
@@ -21,10 +21,7 @@ for element in table:
 print(modules)
 
 # Nombre d'heures total par prof
-prof = input("Entrez le nom d'un.e enseignant.e : ")
-prof = prof.upper()
-
-def calculer_duree(liste):
+def calcule_duree_prof(liste):
     format_date = "%Y-%m-%d %H:%M:%S%z"
     date_debut = liste[1]
     date_fin = liste[2]
@@ -43,10 +40,11 @@ def main():
     duree_en_heures = 0
     for element in ma_liste:
         if prof in element[3]:
-            duree_en_heures += calculer_duree(element)
+            duree_en_heures += calcule_duree_prof(element)
 
     # Afficher le résultat
     print(f"Nombre d'heures de {prof} : {duree_en_heures} heures.")
     return duree_en_heures
 
 main()
+
