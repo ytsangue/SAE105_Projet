@@ -6,7 +6,7 @@ def calculer_duree(liste):
     
     # Extraire les dates de début et de fin de la liste
     date_debut = liste[1]
-    date_fin = liste[0]
+    date_fin = liste[2]
 
     # Extraire les heures et les minutes des dates de début et de fin
     heures_debut, minutes_debut = map(int, date_debut.split()[1].split(':')[:2])
