@@ -36,16 +36,23 @@ for element in table:
     if prof in element[3]:
         module_heures[element[0]]= module_heures.get(element[0],0) + calcule_duree_prof(element)
         if re.search("Amphi",element[4]) or re.search("DS",element[0]):
-            heures_CM = int(heures_CM + calcule_duree_prof(element))
+            heures_CM = heures_CM + calcule_duree_prof(element)
         elif re.search("Labo",element[4]):
-            heures_TP = int(heures_TP + calcule_duree_prof(element))
+            heures_TP = heures_TP + calcule_duree_prof(element)
         elif re.search("TD",element[4]):
-            heures_TD = int(heures_TD + calcule_duree_prof(element))
+            heures_TD = heures_TD + calcule_duree_prof(element)
 
 print(module_heures)
+
+
 print("Heures CM :",heures_CM)
 print("Heures TD :",heures_TD)
 print("Heures TP :",heures_TP)
+
+heures_ = {'Heures Total de CM' : heures_CM, 'Heures Total TD' : heures_TD, 'Heures Total TP' : heures_TP}
+
+Different_Heures = list(heures_.keys())
+Nombre_heures = list(heures_.values())
 
 modules = list(module_heures.keys())
 heures = list(module_heures.values())
@@ -59,10 +66,15 @@ plt.xticks(rotation=30, ha='right')
 plt.grid()
 
 #Creation du bilan dans un fichier csv 
-with open('bilan_heures_par_module.csv', 'w', newline='') as csvfile:
-    writer = csv.writer(csvfile)
-    writer.writerow(['Module', 'Heures'])
-    for module, heure in zip(modules, heures):
-        writer.writerow([module, heure])
-        
+with open('bilan_heures_combined.csv', 'w', newline='') as csvfile:
+    fieldnames = ['Module', 'Heures']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    writer.writeheader()
+    for module, heures in module_heures.items():
+        writer.writerow({'Module': module, 'Heures': heures})
+    csvfile.write('\n')
+    writer.writeheader()
+    # Écriture des données du deuxième dictionnaire
+    for module, heures in heures_.items():
+        writer.writerow({'Module': module, 'Heures': heures})
 plt.show()
