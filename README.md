@@ -2,7 +2,7 @@
 
 En fin d’année il est demandé aux enseignants de préparer une fiche de service présentant le
 bilan de leurs interventions réalisées pendant l’année. L’objectif de ce projet est d’afficher,
-la liste des modules dans lesquels un enseignant donn´e est intervenu, en d´etaillant le nombre
+la liste des modules dans lesquels un enseignant donné est intervenu, en détaillant le nombre
 d’heures de CM, TD et TP.  
 ### Cahier des charges :  
 - le nom de l’enseignant doit être paramétrable;  
