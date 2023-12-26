@@ -10,9 +10,10 @@ d’heures de CM, TD et TP.
 - le résultat sera affiché :  
     - sous forme d’un tableau, au format csv ou xlsx ou pdf;  
     - ET sous forme d’un histogramme donnant pour chaque module le bilan CM/TD/TP (format libre, par exemple .png).  
-[ADECal.csv](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal.csv)
 
-Etape 2 : pré-traitement
+Etape 2 : pré-traitement  
+Le fichier [ADECal.ics] devra subir un pré-traitement pour être converti au format [ADECal.csv](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal.csv)
+
 
 ```python
 from csv_ical import Convert
