@@ -20,9 +20,8 @@ d’heures de CM, TD et TP.
     - sous forme d’un tableau, au format csv ou xlsx ou pdf;  
     - ET sous forme d’un histogramme donnant pour chaque module le bilan CM/TD/TP (format libre, par exemple .png).  
 
-Etape 2 : pré-traitement  
+**Etape 1 : pré-traitement**  
 Le fichier [ADECal.ics](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal.ics) devra subir un pré-traitement pour être converti au format [ADECal.csv](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal.csv)
-
 
 ```python
 from csv_ical import Convert
@@ -36,6 +35,14 @@ convert.read_ical(convert.ICS_FILE_LOCATION)
 convert.make_csv()
 convert.save_csv(convert.CSV_FILE_LOCATION)
 ```
+**Etape 2 : traitement des données**  
+Le fichier [ADECal.csv](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal.csv)
+ contenant les événements du fichier [ADECal.ics](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal.ics) sera traité en utilisant
+Python, afin de répondre aux objectifs du sujet choisi.
+
+
+
+
 
 <p align="center">
   Copyright &copy; 2024-present <a href="https://github.com/ytsangue/SAE105_Projet" target="_blank">SAE 15 </a>
