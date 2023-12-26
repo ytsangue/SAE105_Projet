@@ -6,10 +6,11 @@ SAE15 Traitement des données
  TP Projet                                     
  
 ---
+# Projet n°2 : aider un enseignant à faire le bilan  
 
-# Projet n°2 : aider un enseignant à faire le bilan
+En fin d’année il est demandé aux enseignants de préparer une fiche de service présentant le                    
+ 
 
-En fin d’année il est demandé aux enseignants de préparer une fiche de service présentant le
 bilan de leurs interventions réalisées pendant l’année. L’objectif de ce projet est d’afficher,
 la liste des modules dans lesquels un enseignant donné est intervenu, en détaillant le nombre
 d’heures de CM, TD et TP.  
