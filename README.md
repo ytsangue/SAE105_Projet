@@ -1,3 +1,11 @@
+---
+                                                                                                                              
+ <p align="right"> 
+    <img src="https://www.hostblog.fr/wp-content/uploads/2021/06/dut-reseaux-telecommunication-840x400.jpg" width="300" />
+ </p> 
+                                                                                                                              
+---
+
 # Projet n°2 : aider un enseignant à faire le bilan
 
 En fin d’année il est demandé aux enseignants de préparer une fiche de service présentant le
@@ -27,9 +35,6 @@ convert.read_ical(convert.ICS_FILE_LOCATION)
 convert.make_csv()
 convert.save_csv(convert.CSV_FILE_LOCATION)
 ```
-<p align="right">
-  <img src="https://www.hostblog.fr/wp-content/uploads/2021/06/dut-reseaux-telecommunication-840x400.jpg" width="300" />
-</p>
 
 <p align="center">
   Copyright &copy; 2024-present <a href="https://github.com/ytsangue/SAE105_Projet" target="_blank">SAE 15 </a>
