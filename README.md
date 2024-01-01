@@ -1,12 +1,9 @@
 ---
 SAE15 Traitement des données   
 
-<p align="center">
-  <img src="https://file.diplomeo-static.com/file/00/00/01/44/14465.svg" alt="First Image" width="300" style="margin-right: 20px;" />
-  <img src="https://www.hostblog.fr/wp-content/uploads/2021/06/dut-reseaux-telecommunication-840x400.jpg" alt="Second Image" width="300" style="margin-left: 20px;" />
+<p align="right">
+   <img src="https://www.hostblog.fr/wp-content/uploads/2021/06/dut-reseaux-telecommunication-840x400.jpg" width="300"" />
 </p>
-
-
 
 
  TP Projet TSANGUE Yohann-GRANVSIR-CLERC                                    
