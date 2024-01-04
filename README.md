@@ -1,12 +1,12 @@
----
-SAE15 Traitement des données   
+
+**SAE15 Traitement des données**
 
 <p align="right">
    <img src="https://www.hostblog.fr/wp-content/uploads/2021/06/dut-reseaux-telecommunication-840x400.jpg" width="300"" />
 </p>
 
 
- TP Projet TSANGUE Yohann-GRANVSIR-CLERC                                    
+ **TP Projet TSANGUE Yohann-GRANVSIR-CLERC**                                    
 
 
  Le projet de SAE15 consiste à analyser le fichier [ADECal.ics](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal.ics) 
@@ -32,7 +32,7 @@ d’heures de CM, TD et TP.
        - sous forme d’un tableau, au format csv ou xlsx ou pdf;  
        - ET sous forme d’un histogramme donnant pour chaque module le bilan CM/TD/TP (format libre, par exemple .png).  
 
-##Etape 2 : pré-traitement  
+## Etape 2 : pré-traitement  
 
 Le fichier [ADECal.ics](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal.ics) devra subir un pré-traitement pour être converti au format [ADECal.csv (https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal.csv)
 
