@@ -34,7 +34,7 @@ d’heures de CM, TD et TP.
 
 ## Etape 2 : pré-traitement  
 
-Le fichier [ADECal.ics](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal.ics) devra subir un pré-traitement pour être converti au format [ADECal.csv (https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal.csv)
+Le fichier [ADECal.ics](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal.ics) devra subir un pré-traitement pour être converti au format [ADECal.csv](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal.csv)
 
 ```python
 from csv_ical import Convert
