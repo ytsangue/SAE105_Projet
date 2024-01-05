@@ -15,7 +15,7 @@ for chaine in table:
 prof = input("Entrez le nom d'un.e enseignant.e : ")
 prof = prof.upper()
 
-def calcule_duree_prof(liste):
+def calcule_duree_prof(t: list[int]):
     format_date = "%Y-%m-%d %H:%M:%S%z"
     date_debut = liste[1]
     date_fin = liste[2]
