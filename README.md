@@ -1,13 +1,4 @@
-
-**SAE15 Traitement des données**
-
-<p align="right">
-   <img src="https://www.hostblog.fr/wp-content/uploads/2021/06/dut-reseaux-telecommunication-840x400.jpg" width="300"" />
-</p>
-
-
- **TP Projet TSANGUE Yohann-GRANVSIR-CLERC**                                    
-
+# TP Projet SAE15 Traitement des donnée                                   
 
  Le projet de SAE15 consiste à analyser le fichier [ADECal.ics](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal.ics) 
  (disponible sur [Plubel](https://plubel-prod.u-bourgogne.fr/course/view.php?id=5152)) extrait de ADE et contenant l’intégralité des cours organisés l’année dernière dans le département
@@ -18,8 +9,6 @@ La réalisation du projet comporte plusieurs étapes :
 ### Projet n°2 : aider un enseignant à faire le bilan  
    
 En fin d’année il est demandé aux enseignants de préparer une fiche de service présentant le                    
-    
-   
 bilan de leurs interventions réalisées pendant l’année. L’objectif de ce projet est d’afficher,
 la liste des modules dans lesquels un enseignant donné est intervenu, en détaillant le nombre
 d’heures de CM, TD et TP.  
@@ -55,6 +44,9 @@ Le fichier [ADECal.csv](https://github.com/ytsangue/SAE105_Projet/blob/main/ADEC
  contenant les événements du fichier [ADECal.ics](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal.ics) sera traité en utilisant
 Python, afin de répondre aux objectifs du sujet choisi.
 
+<p align="right">
+   <img src="https://www.hostblog.fr/wp-content/uploads/2021/06/dut-reseaux-telecommunication-840x400.jpg" width="300"" />
+</p>
 
 <p align="center">
   Copyright &copy; 2024-present <a href="https://github.com/ytsangue/SAE105_Projet" target="_blank">SAE 15 </a>
