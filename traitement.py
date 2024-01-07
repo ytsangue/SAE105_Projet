@@ -26,8 +26,7 @@ def calcule_duree_prof(t: list[int]) -> float:
     duree_en_heures = difference_heures + difference_minutes / 60
     return duree_en_heures
 
-def calculer_heures_module(table: list[tuple], prof: str)-> tuple[dict, int, int, int]:   
-    ma_liste = table
+def calculer_heures_module(table: list[tuple], prof: str)-> tuple[dict, float, float, float]:   
     module_heures = {}
     heures_CM = 0
     heures_TD = 0
@@ -45,7 +44,9 @@ def calculer_heures_module(table: list[tuple], prof: str)-> tuple[dict, int, int
 
     return module_heures, heures_CM, heures_TD, heures_TP
 
-heures_ = {'Heures Total de CM' : heures_CM, 'Heures Total TD' : heures_TD, 'Heures Total TP' : heures_TP}
+resultats = calculer_heures_module(table, prof)
+
+heures_ = {'Heures Total de CM': resultats[1], 'Heures Total de TD': resultats[2], 'Heures Total de TP': resultats[3]}
 
 Different_Heures = list(heures_.keys())
 Nombre_heures = list(heures_.values())
@@ -60,17 +61,18 @@ plt.xlabel("Modules")
 plt.ylabel("Nombre d\'heure")
 plt.xticks(rotation=30, ha='right')
 plt.grid()
+plt.show()
 
 #Creation du bilan dans un fichier csv 
 with open('bilan_heures_combined.csv', 'w', newline='') as csvfile:
     fieldnames = ['Module', 'Heures']
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
     writer.writeheader()
-    for module, heures in module_heures.items():
+    # Écriture des données du premier dictionnaire
+    for module, heures in resultats[0].items():
         writer.writerow({'Module': module, 'Heures': heures})
-    csvfile.write('\n')
-    writer.writeheader()
+    # Écriture d'une ligne vide
+    writer.writerow({})
     # Écriture des données du deuxième dictionnaire
     for module, heures in heures_.items():
         writer.writerow({'Module': module, 'Heures': heures})
-plt.show()
