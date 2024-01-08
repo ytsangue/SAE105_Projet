@@ -15,7 +15,7 @@ for chaine in table:
 prof = input("Entrez le nom d'un enseignant : ")
 prof = prof.upper()
 
-def calcule_duree_prof(t: list[int]) -> float:
+def calcule_duree_prof(t: list) -> float:
     format_date = "%Y-%m-%d %H:%M:%S%z"
     date_debut = t[1]
     date_fin = t[2]
@@ -26,7 +26,7 @@ def calcule_duree_prof(t: list[int]) -> float:
     duree_en_heures = difference_heures + difference_minutes / 60
     return duree_en_heures
 
-def calculer_heures_module(table: list[list[str]], prof: str)-> tuple[dict, float, float, float]:   
+def calculer_heures_module(table: list, prof: str)-> tuple:   
     module_heures = {}
     heures_CM = 0
     heures_TD = 0
