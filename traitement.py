@@ -26,7 +26,7 @@ def calcule_duree_prof(t: list[int]) -> float:
     duree_en_heures = difference_heures + difference_minutes / 60
     return duree_en_heures
 
-def calculer_heures_module(table: list[tuple], prof: str)-> tuple[dict, float, float, float]:   
+def calculer_heures_module(table: list[list[str]], prof: str)-> tuple[dict, float, float, float]:   
     module_heures = {}
     heures_CM = 0
     heures_TD = 0
