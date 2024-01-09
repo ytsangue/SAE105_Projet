@@ -42,7 +42,7 @@ def calculer_heures_module(table: list, prof: str)-> tuple:
             elif re.search("TD",element[4]) or re.search("CAO",element[4]):
                 heures_TD += calcule_duree_prof(element)
 
-    return module_heures, heures_CM, heures_TD, heures_TP
+return module_heures, heures_CM, heures_TD, heures_TP
 
 resultats = calculer_heures_module(table, prof)
 
