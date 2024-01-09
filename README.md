@@ -43,6 +43,20 @@ convert.save_csv(convert.CSV_FILE_LOCATION)
 Le fichier [ADECal.csv](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal.csv)
  contenant les événements du fichier [ADECal.ics](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal.ics) sera traité en utilisant
 Python, afin de répondre aux objectifs du sujet choisi.
+[traitement](https://github.com/ytsangue/SAE105_Projet/blob/main/traitement.py)
+
+### Installation
+
+```sh
+git clone https://github.com/ytsangue/SAE105_Projet && cd SAE105_Projet
+
+```
+### Example usage
+
+```sh
+python3 traitement.py
+
+```
 
 <p align="right">
    <img src="https://www.hostblog.fr/wp-content/uploads/2021/06/dut-reseaux-telecommunication-840x400.jpg" width="300"" />
