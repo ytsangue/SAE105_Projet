@@ -3,7 +3,7 @@ import re
 import matplotlib.pyplot as plt
 
 table = []
-with open('ADECal.csv', newline='') as csvfile:
+with open('ADECal/ADECal.csv', newline='') as csvfile:
     reader = csv.reader(csvfile, delimiter=',')
     for ligne in reader:
         table.append(ligne)
