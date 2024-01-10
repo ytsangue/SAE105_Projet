@@ -63,7 +63,7 @@ git clone https://github.com/ytsangue/SAE105_Projet && cd SAE105_Projet
 ### Example usage
 
 ```sh
-python3 traitement.py
+python3 main.py
 ```
 
 ## Contributeur
