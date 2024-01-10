@@ -4,7 +4,7 @@
 
 # TP Projet SAE15 Traitement des donnée                                   
 
- Le projet de SAE15 consiste à analyser le fichier [ADECal.ics](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal.ics) 
+ Le projet de SAE15 consiste à analyser le fichier [ADECal.ics](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal/ADECal.ics) 
  (disponible sur [Plubel](https://plubel-prod.u-bourgogne.fr/course/view.php?id=5152)) extrait de ADE et contenant l’intégralité des cours organisés l’année dernière dans le département
 R&T de l’IUT, avec un cahier des charges spécifique. Ce cahier des charge est indiqué dans la description de chaque sujet de projet dans les pages suivantes.
 La réalisation du projet comporte plusieurs étapes :  
@@ -27,7 +27,7 @@ d’heures de CM, TD et TP.
 
 ## Etape 2 : pré-traitement  
 
-Le fichier [ADECal.ics](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal.ics) devra subir un pré-traitement pour être converti au format [ADECal.csv](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal.csv)
+Le fichier [ADECal.ics](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal/ADECal.ics) devra subir un pré-traitement pour être converti au format [ADECal.csv](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal/ADECal.csv)
 
 ```python
 from csv_ical import Convert
@@ -44,8 +44,8 @@ convert.save_csv(convert.CSV_FILE_LOCATION)
 
 ## Etape 3 : traitement des données  
 
-Le fichier [ADECal.csv](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal.csv)
- contenant les événements du fichier [ADECal.ics](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal.ics) sera traité en utilisant
+Le fichier [ADECal.csv](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal/ADECal.csv)
+ contenant les événements du fichier [ADECal.ics](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal/ADECal.ics) sera traité en utilisant
 Python, afin de répondre aux objectifs du sujet choisi.
 
 ### Installation
@@ -62,7 +62,6 @@ git clone https://github.com/ytsangue/SAE105_Projet && cd SAE105_Projet
 
 ```sh
 python3 traitement.py
-
 ```
 
 ## Contributeur
