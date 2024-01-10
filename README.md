@@ -50,9 +50,13 @@ Python, afin de répondre aux objectifs du sujet choisi.
 
 ### Installation
 
+Powershell 
+```sh
+git clone https://github.com/ytsangue/SAE105_Projet ; cd SAE105_Projet
+```
+Linux
 ```sh
 git clone https://github.com/ytsangue/SAE105_Projet && cd SAE105_Projet
-
 ```
 ### Example usage
 
