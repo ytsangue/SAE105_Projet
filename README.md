@@ -48,6 +48,8 @@ Le fichier [ADECal.csv](https://github.com/ytsangue/SAE105_Projet/blob/main/ADEC
  contenant les événements du fichier [ADECal.ics](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal/ADECal.ics) sera traité en utilisant
 Python, afin de répondre aux objectifs du sujet choisi.
 
+Ce [script](https://github.com/ytsangue/SAE105_Projet/blob/main/traitement.py) Python, conçu pour le projet SAE15, permet d'analyser le fichier [ADECal.ics](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal/ADECal.ics) et de fournir un bilan détaillé des heures d'enseignement d'un enseignant spécifié. L'utilisateur est guidé pour entrer le nom de l'enseignant, puis le programme parcourt le fichier CSV résultant, calculant les heures de cours (CM), de travaux dirigés (TD), de travaux pratiques (TP) pour chaque module concerné et généré un histogramme puis de création d'un tableaux CSV pour des statistiques détaillées.
+
 ### Installation
 
 Powershell 
