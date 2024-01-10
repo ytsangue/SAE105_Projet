@@ -60,7 +60,6 @@ git clone https://github.com/ytsangue/SAE105_Projet && cd SAE105_Projet
 python3 traitement.py
 
 ```
----
 
 ## Contributeur
 
