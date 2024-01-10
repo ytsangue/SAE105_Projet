@@ -16,6 +16,15 @@ prof = input("Entrez le nom d'un enseignant : ")
 prof = prof.upper()
 
 def calcule_duree_prof(t: list) -> float:
+    """
+    Calcule la durée en heures d'un cours à partir des données d'une ligne du fichier CSV.
+
+    Parameters:
+        t (list): Liste contenant les données d'une ligne du fichier CSV.
+
+    Returns:
+        float: Durée du cours en heures.
+    """
     format_date = "%Y-%m-%d %H:%M:%S%z"
     date_debut = t[1]
     date_fin = t[2]
@@ -26,7 +35,18 @@ def calcule_duree_prof(t: list) -> float:
     duree_en_heures = difference_heures + difference_minutes / 60
     return duree_en_heures
 
-def calculer_heures_module(table: list, prof: str)-> tuple:   
+def calculer_heures_module(table: list, prof: str)-> tuple:
+     """
+    Calcule le total d'heures par type de cours (CM, TD, TP) et génère un dictionnaire contenant les heures par module.
+
+    Parameters:
+        table (List[List[str]]): Liste contenant les données du fichier CSV.
+        prof (str): Nom de l'enseignant.
+
+    Returns:
+        Tuple[dict, float, float, float]: Un tuple contenant le dictionnaire des heures par module,
+        le total d'heures de CM, le total d'heures de TD, et le total d'heures de TP.
+    """
     module_heures = {}
     heures_CM = 0
     heures_TD = 0
