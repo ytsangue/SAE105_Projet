@@ -2,7 +2,7 @@
    <img src="https://www.hostblog.fr/wp-content/uploads/2021/06/dut-reseaux-telecommunication-840x400.jpg" width="300"" />
 </p>
 
-# TP Projet SAE15 Traitement des donnée                                   
+# TP Projet SAE15 Traitement des données                                   
 
  Le projet de SAE15 consiste à analyser le fichier [ADECal.ics](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal/ADECal.ics) 
  (disponible sur [Plubel](https://plubel-prod.u-bourgogne.fr/course/view.php?id=5152)) extrait de ADE et contenant l’intégralité des cours organisés l’année dernière dans le département
