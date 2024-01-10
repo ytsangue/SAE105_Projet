@@ -56,7 +56,7 @@ Powershell
 ```sh
 git clone https://github.com/ytsangue/SAE105_Projet ; cd SAE105_Projet
 ```
-Linux
+Bash
 ```sh
 git clone https://github.com/ytsangue/SAE105_Projet && cd SAE105_Projet
 ```
