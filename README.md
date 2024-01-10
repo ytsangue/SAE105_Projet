@@ -1,3 +1,7 @@
+<p align="right">
+   <img src="https://www.hostblog.fr/wp-content/uploads/2021/06/dut-reseaux-telecommunication-840x400.jpg" width="300"" />
+</p>
+
 # TP Projet SAE15 Traitement des donnée                                   
 
  Le projet de SAE15 consiste à analyser le fichier [ADECal.ics](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal.ics) 
@@ -57,10 +61,13 @@ git clone https://github.com/ytsangue/SAE105_Projet && cd SAE105_Projet
 python3 traitement.py
 
 ```
+---
 
-<p align="right">
-   <img src="https://www.hostblog.fr/wp-content/uploads/2021/06/dut-reseaux-telecommunication-840x400.jpg" width="300"" />
-</p>
+## Contributeur
+
+* [TSANGUE](https://github.com/ytsangue/)
+* [GRANVISIR-CLERC](https://github.com/LouisGVC)
+
 
 <p align="center">
   Copyright &copy; 2024-present <a href="https://github.com/ytsangue/SAE105_Projet" target="_blank">SAE 15 </a>
