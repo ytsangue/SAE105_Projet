@@ -29,6 +29,7 @@ d’heures de CM, TD et TP.
 
 Le fichier [ADECal.ics](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal/ADECal.ics) devra subir un pré-traitement pour être converti au format [ADECal.csv](https://github.com/ytsangue/SAE105_Projet/blob/main/ADECal/ADECal.csv)
 
+Pour convertir le fichier ics en csv nous importons le module Convert, on définit les fichiers d'entrée (ADECal.ics) et de sortie (ADECal.csv). Ensuite on lit son contenu, et on le convertit avec la méthode make_csv. Il nous ne reste plus qu'à l'enregistrer et le fichier est converti.
 ```python
 from csv_ical import Convert
 
