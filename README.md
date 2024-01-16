@@ -1,5 +1,5 @@
 <p align="right">
-   <img src="https://www.hostblog.fr/wp-content/uploads/2021/06/dut-reseaux-telecommunication-840x400.jpg" width="300"" />
+   <img src="https://www.hostblog.fr/wp-content/uploads/2021/06/dut-reseaux-telecommunication-840x400.jpg" width="300" />
 </p>
 
 # TP Projet SAE15 Traitement des données                                   
