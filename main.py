@@ -25,7 +25,6 @@ def calcule_duree_prof(t: list) -> float:
     Returns:
         -Durée du cours en heures.
     """
-    format_date = "%Y-%m-%d %H:%M:%S%z"
     date_debut = t[1]
     date_fin = t[2]
     heures_debut, minutes_debut = map(int, date_debut.split()[1].split(':')[:2])
