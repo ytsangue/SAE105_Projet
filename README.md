@@ -69,7 +69,7 @@ git clone https://github.com/ytsangue/SAE105_Projet && cd SAE105_Projet
 python3 main.py
 ```
 
-## Contributeur
+## Contributeurs
 
 * [TSANGUE](https://github.com/ytsangue/)
 * [GRANVISIR-CLERC](https://github.com/LouisGVC)
